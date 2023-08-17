@@ -19,13 +19,13 @@
       "fullWidth": true
     }
   },
-  
+
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
       "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false,
       "fullWidth": true
     },
     "children": [
@@ -80,9 +80,9 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180",
-      "height": "12"
+      "url": "https://www.demoaccount6.com/dkjs/header/v1/web/b4b84ed8240cff3f7d7ff10f1ef08466.png",
+      "width": "50",
+      "height": "120"
     }
   },
   "header-layout.mobile": {

@@ -18,33 +18,36 @@
 }
 
 .flexRowContent--menu-link {
-  background-color: #03044e;
+  background-color: #222224;
   color: #fff;
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #222224;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
   background-color: #f0f0f0;
+
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  color: #727273;
-  font-size: 14px;
+  color: #ababab;
+  font-size: 16px;
 }
 
 .flexRow--deals {
-  background-color: #0F3E99;
-  padding: 14px 0px;
+ background-image: url(https://banerdraftkings--demoaccount6.vteximg.com.br/arquivos/8c5a0be0-dc04-44f7-84f8-a59323179177.png);
+  padding: 0px 8px 0px 8px;
+  border-radius: 10px;
+  margin: 8px 33px 8px 33px;
 }
 
 .flexRow--deals .stretchChildrenWidth {

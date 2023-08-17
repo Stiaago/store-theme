@@ -8,6 +8,8 @@
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
+      "rich-text#shelf-title2",
+      "flex-layout.row#shelf2",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
@@ -32,22 +34,23 @@
       ]
     }
   },
-  "slider-layout#demo-images": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    }
-  },
+
+   "slider-layout#demo-images": {
+     "props": {
+       "itemsPerPage": {
+         "desktop": 1,
+         "tablet": 1,
+         "phone": 1
+       },
+       "infinite": true,
+       "showNavigationArrows": "desktopOnly",
+       "blockClass": "carousel"
+     }
+   },
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Recommended Projects",
       "blockClass": "shelfTitle"
     }
   },
@@ -74,19 +77,49 @@
     }
   },
 
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+  "rich-text#shelf-title2":{
+    "props":{
+      "text":" ## Drops featured",
+      "blockClass":"shelfTitle"
     }
   },
+  "flex-layout.row#shelf2": {
+    "children": ["list-context.product-list#demo2"]
+  },
+  "list-context.product-list#demo2":{
+    "blocks": ["product-summary.shelf"],
+    "children":["slider-layout#demo-products2"],
+    "props":{
+      "orderBy":"OrderByPriceASC"
+    }
+  },
+  "slider-layout#demo-products2":{
+    "props":{
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+
+   "info-card#home": {
+     "props": {
+       "id": "info-card-home",
+       "isFullModeStyle": false,
+       "textPosition": "left",
+       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+       "headline": "Clearance Sale",
+       "callToActionText": "DISCOVER",
+       "callToActionUrl": "/sale/d",
+       "blockClass": "info-card-home",
+       "textAlignment": "center"
+     }
+   },
 
   "rich-text#question": {
     "props": {

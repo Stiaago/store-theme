@@ -2,20 +2,29 @@
   color: #ffffff;
   text-align: center;
   justify-content: center;
+
+  font-size: 14px;
+
+
 }
 
 .container--shelfTitle {
-  color: #727273;
-  justify-content: center;
-  text-align: center;
+  color: #000;
+  justify-content: flex-start;
+  /* text-align: center; */
+  margin: 16px 11px 16px 26px;
+
+
 }
 
 .headingLevel2--shelfTitle {
-  font-weight: 200;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .container--deals .paragraph {
-  margin: 0;
+  margin: 8px;
+
 }
 
 .container--link {
@@ -62,7 +71,7 @@
 }
 
 .container--title {
-  color: #03034E;
+  color: #0c0c7a;
   font-size: 28px;
   font-weight: 700;
 }
