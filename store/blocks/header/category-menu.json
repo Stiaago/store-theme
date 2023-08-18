@@ -5,7 +5,10 @@
     },
     "children": [
       "menu-item#category-apparel",
+      "menu-item#category-drops",
+      "menu-item#category-memorabilia",
       "menu-item#category-home",
+      "menu-item#category-trading-cards",
       "menu-item#more"
     ]
   },
@@ -100,11 +103,61 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Merchandise",
+        "text": "Merchandise"
       }
     }
   },
+
+  "menu-item#category-drops": {
+    "props": {
+      "id": "menu-item-category-drops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Drops",
+        "text": "Drops"
+      }
+    }
+  },
+
+  "menu-item#category-memorabilia": {
+    "props": {
+      "id": "menu-item-category-memorabilia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Memorabilia",
+        "text": "Memorabilia"
+      }
+    }
+  },
+
+
+  "menu-item#category-trading-cards": {
+    "props": {
+      "id": "menu-item-category-trading-cards",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Trading Cards",
+        "text": "Trading Cards"
+      }
+    }
+  },
+
   "menu-item#more": {
     "props": {
       "id": "menu-item-custom-sale",
@@ -115,8 +168,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "leam",
+        "text": "Leam"
       }
     },
     "blocks": [
@@ -133,8 +186,7 @@
   },
   "flex-layout.row#menu-more": {
     "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
+      "flex-layout.col#menu-more-1"
     ]
   },
   "flex-layout.col#menu-more-1": {
@@ -142,18 +194,16 @@
       "vtex.menu@2.x:menu#more"
     ]
   },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
+
   "vtex.menu@2.x:menu#more": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
+      "menu-item#Drops",
       "menu-item#about-us",
       "menu-item#faq"
+
     ]
   },
   "menu-item#about-us": {
@@ -171,6 +221,23 @@
       }
     }
   },
+
+  "menu-item#Drops":{
+    "props":{
+      "id": "menu-item-Drops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Drops",
+        "text": "Drops"
+      }
+    }
+  },
+
   "menu-item#faq": {
     "props": {
       "id": "menu-item-faq",

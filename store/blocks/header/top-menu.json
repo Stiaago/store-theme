@@ -7,7 +7,7 @@
   },
   "menu-item#shop": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-Drops",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -15,8 +15,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "Drops",
+        "text": "Drops"
       }
     }
   },

@@ -20,15 +20,19 @@
 .flexRowContent--menu-link {
   background-color: #222224;
   color: #fff;
+
 }
 
 .flexRowContent--main-header {
+  padding: 16px 48px 16px 48px;
   background-color: #222224;
+
+
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
-  padding: 0.625rem 0.5rem;
+
   background-color: #f0f0f0;
 
 }
@@ -43,22 +47,24 @@
   font-size: 16px;
 }
 
-.flexRow--deals {
- background-image: url(https://banerdraftkings--demoaccount6.vteximg.com.br/arquivos/8c5a0be0-dc04-44f7-84f8-a59323179177.png);
+/* .flexRow--deals {
+ background-image: url(https://demoaccount6.vteximg.com.br/arquivos/image2.png);
   padding: 0px 8px 0px 8px;
+
   border-radius: 10px;
-  margin: 8px 33px 8px 33px;
+  margin: 20px 33px 8px 33px;
 }
 
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
+  padding: 8px;
 }
 
 .flexRow--deals .flexCol {
   align-items: center;
   margin-bottom: 5px;
   padding-top: 5px;
-}
+} */
 
 .flexCol--filterCol {
   max-width: 500px;

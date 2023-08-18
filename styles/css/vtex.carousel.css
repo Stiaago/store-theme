@@ -3,5 +3,6 @@
 }
 
 .containerImg .img {
+  border-radius: 25px;
   max-width: 100%;
 }

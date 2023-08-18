@@ -58,12 +58,13 @@
 }
 
 .imageElement--storePrint {
+
   max-height: 300px;
   margin-bottom: 20px;
 }
 
 .skuSelectorContainer {
-  margin: 1rem 0;
+  margin: 10rem 0;
 }
 
 @media only screen and (min-width: 640px) {
@@ -94,6 +95,7 @@
 }
 
 .productImagesContainer--quickview .carouselGaleryThumbs {
+
   display: none;
 }
 

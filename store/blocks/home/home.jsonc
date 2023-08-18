@@ -2,19 +2,46 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
+      "flex-layout.row#full-banner-desktop1",
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "rich-text#shelf-title2",
       "flex-layout.row#shelf2",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "list-context.image-list#demo2",
+      "rich-text#shelf-title3",
+      "flex-layout.row#shelf3",
+      "rich-text#shelf-title4",
+      "flex-layout.row#shelf4",
+      "list-context.image-list#demo3",
+      "flex-layout.row#full-footer-desktop3",
+      "flex-layout.row#full-footer-desktop4"
     ]
+  },
+
+  "flex-layout.row#full-banner-desktop1": {
+    "children": ["image#full-banner-desktop1"],
+    "props": {
+      "paddingTop": 8,
+      "paddingBottom": 8,
+
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "title": "Full Banner 1"
+  },
+  "image#full-banner-desktop1": {
+    "props": {
+      "src": "https://demoaccount6.vteximg.com.br/arquivos/image2.png",
+      "alt": "Tool Kits",
+      "title": "Tool Kits",
+      "link": {
+        "url": "/kits"
+      }
+    },
+    "title": "Full Banner 1 - Imagem"
+
   },
 
   "list-context.image-list#demo": {
@@ -24,7 +51,7 @@
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "image": "https://demoaccount6.vteximg.com.br/arquivos/Rectangle2.png",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
         },
         {
@@ -48,12 +75,15 @@
      }
    },
 
+
+
   "rich-text#shelf-title": {
     "props": {
       "text": "## Recommended Projects",
       "blockClass": "shelfTitle"
     }
   },
+
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
@@ -67,7 +97,7 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 5,
         "tablet": 3,
         "phone": 1
       },
@@ -79,7 +109,7 @@
 
   "rich-text#shelf-title2":{
     "props":{
-      "text":" ## Drops featured",
+      "text":" ## Drops ",
       "blockClass":"shelfTitle"
     }
   },
@@ -96,7 +126,67 @@
   "slider-layout#demo-products2":{
     "props":{
       "itemsPerPage": {
-        "desktop": 6,
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf"
+    }
+  },
+
+
+  "rich-text#shelf-title3":{
+    "props":{
+      "text":" ## Auctions ",
+      "blockClass":"shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf3": {
+    "children": ["list-context.product-list#demo3"]
+  },
+  "list-context.product-list#demo3":{
+    "blocks": ["product-summary.shelf"],
+    "children":["slider-layout#demo-products3"],
+    "props":{
+      "orderBy":"OrderByPriceASC"
+    }
+  },
+  "slider-layout#demo-products3":{
+    "props":{
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "rich-text#shelf-title4":{
+    "props":{
+      "text":" ## Reignmakers Football ",
+      "blockClass":"shelfTitle"
+    }
+  },
+
+  "flex-layout.row#shelf4": {
+    "children": ["list-context.product-list#demo4"]
+  },
+  "list-context.product-list#demo4":{
+    "blocks": ["product-summary.shelf"],
+    "children":["slider-layout#demo-products4"],
+    "props":{
+      "orderBy":"OrderByPriceASC"
+    }
+  },
+  "slider-layout#demo-products4":{
+    "props":{
+      "itemsPerPage": {
+        "desktop": 5,
         "tablet": 3,
         "phone": 1
       },
@@ -107,31 +197,109 @@
   },
 
 
-   "info-card#home": {
-     "props": {
-       "id": "info-card-home",
-       "isFullModeStyle": false,
-       "textPosition": "left",
-       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-       "headline": "Clearance Sale",
-       "callToActionText": "DISCOVER",
-       "callToActionUrl": "/sale/d",
-       "blockClass": "info-card-home",
-       "textAlignment": "center"
-     }
-   },
 
-  "rich-text#question": {
+  "list-context.image-list#demo2": {
+    "children": ["slider-layout#demo-images2"],
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://demoaccount6.vteximg.com.br/arquivos/Rectangle1.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+        }
+      ]
     }
   },
 
-  "rich-text#link": {
+   "slider-layout#demo-images2": {
+     "props": {
+       "itemsPerPage": {
+         "desktop": 1,
+         "tablet": 1,
+         "phone": 1
+       },
+       "infinite": true,
+       "showNavigationArrows": "desktopOnly",
+       "blockClass": "carousel"
+     }
+   },
+
+   "list-context.image-list#demo3": {
+    "children": ["slider-layout#demo-images3"],
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://demoaccount6.vteximg.com.br/arquivos/Rectangle3.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+        }
+      ]
     }
+  },
+
+   "slider-layout#demo-images3": {
+     "props": {
+       "itemsPerPage": {
+         "desktop": 1,
+         "tablet": 1,
+         "phone": 1
+       },
+       "infinite": true,
+       "showNavigationArrows": "desktopOnly",
+       "blockClass": "carousel"
+     }
+   },
+   "flex-layout.row#full-footer-desktop3": {
+    "children": ["image#full-footer-desktop3"],
+    "props": {
+      "paddingTop": 8,
+
+
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "title": "Full Banner 1"
+  },
+
+  "image#full-footer-desktop3": {
+    "props": {
+      "src": "https://demoaccount6.vteximg.com.br/arquivos/image3.png",
+      "alt": "Tool Kits",
+      "title": "Tool Kits",
+      "link": {
+        "url": "/kits"
+      }
+    },
+    "title": "Full Banner 1 - Imagem"
+  },
+
+  "flex-layout.row#full-footer-desktop4": {
+    "children": ["image#full-footer-desktop4"],
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "title": "Full Banner 1"
+  },
+
+  "image#full-footer-desktop4": {
+    "props": {
+      "src": "https://demoaccount6.vteximg.com.br/arquivos/image4.png",
+      "alt": "Tool Kits",
+      "title": "footer"
+    },
+    "title": "Imagen footer"
   }
 }

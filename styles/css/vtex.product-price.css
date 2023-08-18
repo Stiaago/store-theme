@@ -5,7 +5,7 @@
 }
 
 .sellingPrice {
-  color: #3f3f40;
+  color: #979797;
   font-size: 1.25rem;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .sellingPriceValue--summary {
-  font-size:12px;
+  font-size: 19px;
   font-weight: 600;
   color: #2E2E2E;
 }
